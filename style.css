@@ -27,6 +27,7 @@ body{
   z-index: 1000;
   top: 0;
   width: 100%;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
   
 }
 
@@ -109,12 +110,13 @@ body{
 .sub-category img {
   border-radius: 10px;
   padding: 0.7rem;
-  transition: transform 0.8s ease-in-out;
+  transition: transform 0.9s ease-in-out;
   border-radius:20px ;
   
 }
 .sub-category div {
-  background-color: darkgrey;
+  /* background-color: darkgrey; */
+  box-shadow: 0 15px 15px rgba(0, 0, 0, 0.2);
   border-radius: 10px;
   
 }
@@ -124,6 +126,7 @@ body{
 
 .sub-category img:hover {
   transform: translateY(-20px);
+  
 }
 
 .Feature-products {
