@@ -56,8 +56,8 @@ body::-webkit-scrollbar{
   
 }
 .list a li:hover {
-  color: red;
-  transform: translateY(-12px);
+  color: #3DC2EC;
+  transform: translateY(-5px);
   /* transform: scale(1.05);  */
   /* background-color: #e74c3c; */
   border-radius: 50px;
@@ -65,7 +65,7 @@ body::-webkit-scrollbar{
   cursor: pointer;
   font-weight: 500;
   text-transform: uppercase;
-  box-shadow: 0 4px 10px rgba(0.5, 0.6, 0.8, 0.5);
+  box-shadow: 0 4px 10px rgba(0.5, 0.6, 0.8, 0.6);
 
   
   
@@ -73,7 +73,7 @@ body::-webkit-scrollbar{
 
 .login-btn {
   border: none;
-  background-color: #e74c3c;;
+  background-color: #241E92;;
   font-size: 1.1rem;
   padding: 8px;
   color: white;
@@ -87,7 +87,7 @@ body::-webkit-scrollbar{
 .login-btn:hover{
   transform: scale(1.1);
   
-  background-color: #2c3e50;
+  background-color:#DD105E;
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
 
 }
@@ -162,8 +162,9 @@ body::-webkit-scrollbar{
   margin-top: 2rem;
 }
 .sub-category p {
-  text-align: center;
+ text-align: center;
 }
+
 
 
 .customer-testi {
@@ -174,7 +175,7 @@ body::-webkit-scrollbar{
 
 .customer-testi h1 {
   font-size: 2rem;
-  color: #2c3e50;
+  color: #FF0000;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -185,7 +186,7 @@ body::-webkit-scrollbar{
   display: flex;
   text-align: center;
   align-items: center;
-  background-color: #1f1f1f;
+  background-color: #191919;
   color: white;
   margin-top: 2rem;
   
@@ -193,6 +194,8 @@ body::-webkit-scrollbar{
 }
 .testi-div p {
   font-size: 1rem;
+  color: #4477CE;
+  margin-top: 1rem;
   
 }
 .testi-div {
