@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Page</title>
+  <link rel="stylesheet" href="/login.css">
+  
+</head>
+<body>
+
+  <section>
+    <div class="container">
+      <!-- Radio Buttons for Toggle -->
+      <input type="radio" id="show-login" name="auth" checked>
+      <label for="show-login">Sign In</label>
+
+      <input type="radio" id="show-signup" name="auth">
+      <label for="show-signup">Sign Up</label>
+
+      <!-- Login Form -->
+      <div id="login-form">
+        <form id="login-page" action="#">
+          <h2>Login</h2>
+          <input type="text" placeholder="Username" required>
+          <input type="password" placeholder="Password" required>
+          <button type="submit">Sign In</button>
+          <h3>Don't have an account? <a href="#">Sign Up Here</a></h3>
+        </form>
+      </div>
+
+      <!-- Sign Up Form -->
+      <div id="signup-form">
+        <form id="sign-up-page" action="#">
+          <h2>Sign Up</h2>
+          <input type="text" placeholder="Full Name" required>
+          <input type="email" placeholder="Email Address" required>
+          <input type="password" placeholder="Password" required>
+          <button type="submit">Sign Up</button>
+          <h3>Already have an account? <a href="#">Sign In Here</a></h3>
+        </form>
+      </div>
+
+    </div>
+  </section>
+
+</body>
+</html>
