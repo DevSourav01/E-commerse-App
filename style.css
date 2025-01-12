@@ -5,6 +5,7 @@
 }
 body{
   background-color:  #F4F4F4;
+ 
   font-family: "Roboto", serif;
   font-weight: 500;
   overflow-y: scroll;
@@ -208,6 +209,11 @@ body::-webkit-scrollbar{
 
 /* Responsive Styles */
 @media (max-width: 540px){
+
+  .logo-img  img{
+    height: 40px;
+    width: 100px;
+  }
   /* nav -iteams*/
 
   .nav-right ul{
@@ -247,7 +253,7 @@ body::-webkit-scrollbar{
   /* main-item*/
 
   .main-content{
-    margin-top: 6rem;
+    margin-top: 5rem;
     gap: 2rem;
    padding: 35px;
   }
@@ -263,10 +269,27 @@ body::-webkit-scrollbar{
 
   /*category section*/
   .sub-category{
-    display: flex;
-    flex-direction:column;
-    justify-content:space-evenly;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 25px;
+    padding: 1rem;
+    
+    
 
+}
+.sub-category div{
+  width: 100%;
+}
+
+.sub-category img{
+  display: block;
+  width: 90%;
+  height: 90%;
+  object-fit: cover;
+  margin: 0 auto;
+  padding: 0.5rem 0;
+  border-radius: 10px;
+  
 }
 
 
