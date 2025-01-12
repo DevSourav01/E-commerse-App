@@ -162,7 +162,7 @@ body{
 
 .customer-testi {
   text-align: center;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
   
 }
 
@@ -191,10 +191,81 @@ body{
 }
 .testi-div {
   padding: 2.5rem;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.7);
   
 }
 
-.testi-div:hover {
-  transform: translateY(1px); /* Slight lift effect on hover */
-  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.7); /* Increase shadow on hover */
+.footer-section{
+  margin-top: 0px;
+}
+
+
+
+/* Responsive Styles */
+@media (max-width: 540px){
+  /* nav -iteams*/
+
+  .nav-right ul{
+    display: flex;
+    flex-direction:row ;
+    justify-content: space-evenly;
+    font-size: 1rem;
+    gap: 1.5rem;
+    margin-left: 3rem;
+    margin-bottom: 0.5rem;
+    font-size: 0.5rem;
+  }
+  .login-btn{
+    font-size: 0.5rem;
+  }
+
+  .main-nav{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .list a li:hover {
+   transform: none;
+    text-transform: none;
+    font-weight: 300;
+  
+  }
+  .list a li {
+    color: black;
+    transition: all 0.4s ease;
+    
+   
+    
+  }
+
+
+  /* main-item*/
+
+  .main-content{
+    margin-top: 6rem;
+    gap: 2rem;
+   padding: 35px;
+  }
+  .main-content h1{
+    font-size:20px;
+  }
+  .main-content p{
+    font-size: 20px;
+  }
+  .main-content.login-btn{
+    margin-bottom:5rem;
+  }
+
+  /*category section*/
+  .sub-category{
+    display: flex;
+    flex-direction:column;
+    justify-content:space-evenly;
+
+}
+
+
+.reviews{
+  flex-direction: column;
+}
 }
