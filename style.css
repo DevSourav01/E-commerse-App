@@ -7,6 +7,11 @@ body{
   background-color:  #F4F4F4;
   font-family: "Roboto", serif;
   font-weight: 500;
+  overflow-y: scroll;
+}
+
+body::-webkit-scrollbar{
+  display: none;
 }
 
 .logo-img {
