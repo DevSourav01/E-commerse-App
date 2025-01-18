@@ -189,6 +189,8 @@ body::-webkit-scrollbar{
   background-color: #191919;
   color: white;
   margin-top: 2rem;
+  padding: 5rem;
+  gap: 1rem;
   
 
 }
