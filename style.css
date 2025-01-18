@@ -1,17 +1,16 @@
 * {
   margin: 0;
   padding: 0;
-
 }
-body{
-  background-color:  #F4F4F4;
- 
+body {
+  background-color: #f4f4f4;
+
   font-family: "Roboto", serif;
   font-weight: 500;
   overflow-y: scroll;
 }
 
-body::-webkit-scrollbar{
+body::-webkit-scrollbar {
   display: none;
 }
 
@@ -19,7 +18,7 @@ body::-webkit-scrollbar{
   margin-left: 1rem;
   margin-top: 0.5rem;
 }
-.logo-img  img{
+.logo-img img {
   height: 70px;
   width: 140px;
 }
@@ -28,13 +27,12 @@ body::-webkit-scrollbar{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color:  white;
+  background-color: white;
   position: fixed;
   z-index: 1000;
   top: 0;
   width: 100%;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
-  
 }
 
 .nav-right ul {
@@ -53,10 +51,9 @@ body::-webkit-scrollbar{
 .list a li {
   color: black;
   transition: all 0.3s ease;
-  
 }
 .list a li:hover {
-  color: #3DC2EC;
+  color: #3dc2ec;
   transform: translateY(-5px);
   /* transform: scale(1.05);  */
   /* background-color: #e74c3c; */
@@ -66,14 +63,11 @@ body::-webkit-scrollbar{
   font-weight: 500;
   text-transform: uppercase;
   box-shadow: 0 4px 10px rgba(0.5, 0.6, 0.8, 0.6);
-
-  
-  
 }
 
 .login-btn {
   border: none;
-  background-color: #241E92;;
+  background-color: #241e92;
   font-size: 1.1rem;
   padding: 8px;
   color: white;
@@ -84,12 +78,11 @@ body::-webkit-scrollbar{
   cursor: pointer;
   outline: none;
 }
-.login-btn:hover{
+.login-btn:hover {
   transform: scale(1.1);
-  
-  background-color:#DD105E;
-  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
 
+  background-color: #dd105e;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
 }
 
 /*main-content*/
@@ -100,11 +93,14 @@ body::-webkit-scrollbar{
   justify-content: center;
   flex-direction: column;
   gap: 2rem;
-  background-color:#3498db;
+  background-color: #3498db;
   color: white;
-  padding: 2.5rem;
+  padding: 4rem;
   font-size: 1.5rem;
   margin-top: 5rem;
+}
+.main-content p{
+  font-size: 17px;
 }
 
 /*category Section*/
@@ -117,22 +113,19 @@ body::-webkit-scrollbar{
   border-radius: 10px;
   padding: 0.7rem;
   transition: transform 0.9s ease-in-out;
-  border-radius:20px ;
-  
+  border-radius: 20px;
 }
 .sub-category div {
   /* background-color: darkgrey; */
   box-shadow: 0 15px 15px rgba(0, 0, 0, 0.2);
   border-radius: 10px;
-  
 }
-.sub-category p{
+.sub-category p {
   margin-bottom: 10px;
 }
 
 .sub-category img:hover {
   transform: translateY(-20px);
-  
 }
 
 .Feature-products {
@@ -160,23 +153,60 @@ body::-webkit-scrollbar{
   align-items: center;
   gap: 3rem;
   margin-top: 2rem;
+  margin-bottom: 5rem;
 }
 .sub-category p {
- text-align: center;
+  text-align: center;
 }
+
+/*Table*/
+.comparison-table {
+  width: 70%;
+  margin: 30px auto;
+  border-collapse: collapse;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+  margin-bottom: 5rem;
+ 
+  
+}
+.comparison-table th, .comparison-table td {
+  border: 1px solid #ddd;
+  padding: 10px 15px;
+  text-align: center;
+}
+.comparison-table th {
+  background-color: #d32f2f;
+  color: white;
+  text-transform: uppercase;
+}
+.comparison-table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+.comparison-table tr:hover {
+  background-color: #f9e0e0;
+}
+.table-heading {
+  text-align: center;
+  font-size: 24px;
+  margin: 20px 0;
+  font-weight: bold;
+}
+
+
 
 
 
 .customer-testi {
   text-align: center;
   margin-bottom: 1rem;
-  
+  margin-bottom: -7rem;
 }
 
 .customer-testi h1 {
-  font-size: 2rem;
-  color: #FF0000;
-  font-weight: 700;
+  font-size: 1.5rem;
+  color: #ff0000;
+  font-weight: 500;
   text-transform: uppercase;
   letter-spacing: 1px;
   margin-bottom: 1rem;
@@ -188,42 +218,35 @@ body::-webkit-scrollbar{
   align-items: center;
   background-color: #191919;
   color: white;
-  margin-top: 2rem;
-  padding: 5rem;
-  gap: 1rem;
-  
-
+  margin-top: 3rem;
+  padding: 6rem;
+  gap: 1.1rem;
 }
 .testi-div p {
   font-size: 1rem;
-  color: #4477CE;
+  color: #4477ce;
   margin-top: 1rem;
-  
 }
 .testi-div {
   padding: 2.5rem;
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.7);
-  
 }
 
-.footer-section{
+.footer-section {
   margin-top: 0px;
 }
 
-
-
 /* Responsive Styles */
-@media (max-width: 540px){
-
-  .logo-img  img{
+@media (max-width: 540px) {
+  .logo-img img {
     height: 40px;
     width: 100px;
   }
   /* nav -iteams*/
 
-  .nav-right ul{
+  .nav-right ul {
     display: flex;
-    flex-direction:row ;
+    flex-direction: row;
     justify-content: space-evenly;
     font-size: 1rem;
     gap: 1.5rem;
@@ -231,74 +254,79 @@ body::-webkit-scrollbar{
     margin-bottom: 0.5rem;
     font-size: 0.5rem;
   }
-  .login-btn{
+  .login-btn {
     font-size: 0.5rem;
   }
 
-  .main-nav{
+  .main-nav {
     display: flex;
     flex-direction: column;
   }
 
   .list a li:hover {
-   transform: none;
+    transform: none;
     text-transform: none;
     font-weight: 300;
-  
   }
   .list a li {
     color: black;
     transition: all 0.4s ease;
-    
-   
-    
   }
-
 
   /* main-item*/
 
-  .main-content{
+  .main-content {
     margin-top: 5rem;
     gap: 2rem;
-   padding: 35px;
+    padding: 35px;
   }
-  .main-content h1{
-    font-size:20px;
-  }
-  .main-content p{
+  .main-content h1 {
     font-size: 20px;
   }
-  .main-content.login-btn{
-    margin-bottom:5rem;
+  .main-content p {
+    font-size: 20px;
+  }
+  .main-content.login-btn {
+    margin-bottom: 5rem;
   }
 
   /*category section*/
-  .sub-category{
+  .sub-category {
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 25px;
     padding: 1rem;
-    
-    
+  }
+  .sub-category div {
+    width: 100%;
+  }
 
+  .sub-category img {
+    display: block;
+    width: 90%;
+    height: 90%;
+    object-fit: cover;
+    margin: 0 auto;
+    padding: 0.5rem 0;
+    border-radius: 10px;
+  }
+
+  .comparison-table {
+    width: 100%;
+    overflow-x: auto;
+    display: block;
 }
-.sub-category div{
-  width: 100%;
+.comparison-table thead,
+.comparison-table tbody {
+    width: 100%;
+}
+.comparison-table th,
+.comparison-table td {
+    font-size: 12px;
+    padding: 8px 10px;
 }
 
-.sub-category img{
-  display: block;
-  width: 90%;
-  height: 90%;
-  object-fit: cover;
-  margin: 0 auto;
-  padding: 0.5rem 0;
-  border-radius: 10px;
-  
-}
-
-
-.reviews{
-  flex-direction: column;
-}
+  .reviews {
+    flex-direction: column;
+  }
 }
