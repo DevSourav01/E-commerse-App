@@ -8,12 +8,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
-
-    <link rel="icon" href="https://media-hosting.imagekit.io//2e20c05316c9474b/favicon-32x32.png?Expires=1831217784&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=r9k-o6XFlY-J8kRq15NCOrgUXRgP7oN2ggnk3-2GpgPFRT3BEfbn4TJ9nQ1qPrkqSK~kmEzbMWRa~PZjAUQaqQHH6nC5uF8a9LCmDSekF2cFqdVzbh2AfkYbdzdzdIwH8j1e2lf7YrdqyIFKyOWu2x-~8Y74T~sti1bIHp-Skmp~99XW4bf0GgW6sbVVh9BxtJ0vaHqDffqj1l2FZP~-eqrWH3UCdbB~EB8KOlWC4lIYUG6-jMlk98GFhGijVK0P20Yb3lKAEMb1mYpwd-tccGgRV3Li1SEHiWxaYQuG4WP65TLBeYy4ZRtr-BDDui86NQ6ms0LOMzE2~J10Rpd0lg__" type="image/png">
-    <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-  />
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   
     <link rel="stylesheet" href="/style.css" />
 
@@ -46,8 +42,10 @@
 
         <section>
             <div class="main-content">
-                <h1 class="animate__animated animate__fadeInUp">Welcome To Our <i>BharatCart</i> Store</h1>
-                <p>Discover the best products at unbeatable prices</p>
+                <h1 data-aos="fade-up"
+                data-aos-duration="3000">Welcome To Our <i>BharatCart</i> Store</h1>
+                <p data-aos="fade-up"
+                data-aos-duration="3000">Discover the best products at unbeatable prices</p>
                 <button class="login-btn">Shop Now</button>
             </div>
         </section>
@@ -59,22 +57,22 @@
         </div>
 
         <div class="sub-category">
-            <div>
+            <div  data-aos="zoom-out-right"  data-aos-duration="1000">
                 <img src="https://placehold.co/200?text=Electronics" alt="Electronics">
 
                 <p>Electronics</p>
             </div>
-            <div>
+            <div  data-aos="zoom-out-right" data-aos-duration="1000">
                 <img src="https://placehold.co/200?text=Fashion" alt="Fashion">
 
                 <p>Fashion</p>
             </div>
-            <div>
+            <div data-aos="zoom-out-left" data-aos-duration="1000">
                 <img src="https://placehold.co/200?text=Home Decor" alt="Home Decor">
 
                 <p>Home Decor</p>
             </div>
-            <div>
+            <div data-aos="zoom-out-left" data-aos-duration="1000">
                 <img src="https://placehold.co/200?text=Books" alt="Books">
 
                 <p>Books</p>
@@ -87,25 +85,25 @@
             <h1>Featured Products</h1>
         </div>
         <div class="sub-category">
-            <div>
+            <div data-aos="zoom-out-right" data-aos-duration="1000">
                 <img src="https://placehold.co/200?text=Electronics" alt="Electronics">
 
                 <p>Product 1</p>
                 <p>$8</p>
             </div>
-            <div>
+            <div data-aos="zoom-out-right" data-aos-duration="1000">
                 <img src="https://placehold.co/200?text=Fashion" alt="Fashion">
 
                 <p>Product 2</p>
                 <p>$8</p>
             </div>
-            <div>
+            <div data-aos="zoom-out-left" data-aos-duration="1000">
                 <img src="https://placehold.co/200?text=Home Decor" alt="Home Decor">
 
                 <p>Product 3</p>
                 <p>$8</p>
             </div>
-            <div>
+            <div data-aos="zoom-out-left" data-aos-duration="1000">
                 <img src="https://placehold.co/200?text=Books" alt="Books">
 
                 <p>Product 4</p>
@@ -169,19 +167,19 @@
         </div>
 
         <div class="reviews">
-            <div class="testi-div">
+            <div class="testi-div" data-aos="flip-left" data-aos-duration="1000">
                 <h1>"The service is exceptional! I couldn't have asked for a better experience."</h1>
                 <p>- Lisa Cooper</p>
             </div>
-            <div class="testi-div">
+            <div class="testi-div" data-aos="flip-left" data-aos-duration="1000">
                 <h1>"Affordable, reliable, spanand high quality. Highly recommend this to everyone."</h1>
                 <p>-John Doe</p>
             </div>
-            <div class="testi-div">
+            <div class="testi-div" data-aos="flip-right" data-aos-duration="1000">
                 <h1>"Affordable, reliable, spanand high quality. Highly recommend this to everyone."</h1>
                 <p>- Mark Wilson</p>
             </div>
-            <div class="testi-div">
+            <div class="testi-div" data-aos="flip-right" data-aos-duration="1000">
                 <h1>"This product has been life-changing. Watch my full review in the video above."</h1>
                     <p>- Chris Brown</p>
             </div>
@@ -190,6 +188,11 @@
     <footer class="footer-section">
         <p>&copy; <span id="year">2025</span> Your BharatCart Store. All rights reserved.</p>
     </footer>
+    
+    <script>
+        AOS.init();
+      </script>
+    
 </body>
 
 </html>
