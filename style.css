@@ -103,6 +103,29 @@ body::-webkit-scrollbar {
   font-size: 17px;
 }
 
+.special-offer {
+  border-radius: 30px;
+  background-color: grey;
+  padding: 10px;
+  animation: zoomEffect 2s infinite; /* Apply animation */
+}
+.special-offer p{
+  font-size: 0.8rem;
+}
+
+@keyframes zoomEffect {
+  0% {
+    transform: scale(1); /* Normal size */
+  }
+  50% {
+    transform: scale(1.1); /* Slightly zoomed in */
+  }
+  100% {
+    transform: scale(1); /* Back to normal size */
+  }
+}
+
+
 /*category Section*/
 .category {
   display: flex;
