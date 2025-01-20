@@ -3,10 +3,12 @@
   padding: 0;
 }
 body {
-  background-color: #f4f4f4;
+  /* background-color: #f4f4f4; */
+  background: #ffa69e;
 
-  font-family: "Roboto", serif;
-  font-weight: 500;
+  font-family: "Poppins", serif;
+  font-weight: 700;
+  font-style: normal;
   overflow-y: scroll;
 }
 
@@ -19,15 +21,15 @@ body::-webkit-scrollbar {
   margin-top: 0.5rem;
 }
 .logo-img img {
-  height: 70px;
-  width: 140px;
+  height: 50px;
+  width: 100px;
 }
 
 .main-nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: white;
+  background-color:#ffe3e0;
   position: fixed;
   z-index: 1000;
   top: 0;
@@ -93,11 +95,11 @@ body::-webkit-scrollbar {
   justify-content: center;
   flex-direction: column;
   gap: 2rem;
-  background-color: #3498db;
+  background-color: #ef6351;
   color: white;
   padding: 4rem;
   font-size: 1.5rem;
-  margin-top: 5rem;
+  margin-top: 4rem;
 }
 .main-content p{
   font-size: 17px;
@@ -105,23 +107,30 @@ body::-webkit-scrollbar {
 
 .special-offer {
   border-radius: 30px;
-  background-color: grey;
+  background-color: #ffbe0b;
   padding: 10px;
-  animation: zoomEffect 2s infinite; /* Apply animation */
+  color: black;
+  animation: zoomAndFadeEffect 3s infinite; /* Apply animation */
+
 }
-.special-offer p{
+
+
+.special-offer p {
   font-size: 0.8rem;
 }
 
-@keyframes zoomEffect {
+@keyframes zoomAndFadeEffect {
   0% {
-    transform: scale(1); /* Normal size */
+    transform: scale(1); 
+    opacity: 0; 
   }
   50% {
-    transform: scale(1.1); /* Slightly zoomed in */
+    transform: scale(1.1); 
+    opacity: 1; 
   }
   100% {
-    transform: scale(1); /* Back to normal size */
+    transform: scale(1); 
+    opacity: 0; 
   }
 }
 
@@ -164,8 +173,8 @@ body::-webkit-scrollbar {
 }
 
 .footer-section {
-  background-color: black;
-  color: white;
+  background-color: #4cc9f0;
+  color: black;
   text-align: center;
   margin-top: 1rem;
 }
@@ -184,7 +193,7 @@ body::-webkit-scrollbar {
 
 /*Table*/
 .comparison-table {
-  width: 70%;
+  width: 80%;
   margin: 30px auto;
   border-collapse: collapse;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -203,9 +212,9 @@ body::-webkit-scrollbar {
   color: white;
   text-transform: uppercase;
 }
-.comparison-table tr:nth-child(even) {
+/* .comparison-table tr:nth-child(even) {
   background-color: #f2f2f2;
-}
+} */
 .comparison-table tr:hover {
   background-color: #f9e0e0;
 }
@@ -228,7 +237,7 @@ body::-webkit-scrollbar {
 
 .customer-testi h1 {
   font-size: 1.5rem;
-  color: #ff0000;
+  color: #fca311;
   font-weight: 500;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -239,7 +248,7 @@ body::-webkit-scrollbar {
   display: flex;
   text-align: center;
   align-items: center;
-  background-color: #191919;
+  background-color: #323031;
   color: white;
   margin-top: 3rem;
   padding: 6rem;
