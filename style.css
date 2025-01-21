@@ -29,7 +29,7 @@ body::-webkit-scrollbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color:white;
+  background-color: #FFFFFF;
   position: fixed;
   z-index: 1000;
   top: 0;
@@ -51,12 +51,10 @@ body::-webkit-scrollbar {
 }
 
 .list a li {
-  color: black;
+  color:royalblue;
 }
 .list a li:hover {
-  color: #3dc2ec;
-  border-bottom: 2px solid red;
-  transition: step-start;
+  color: Coral;
   cursor: pointer;
 }
 
@@ -131,16 +129,21 @@ body::-webkit-scrollbar {
   justify-content: center;
   margin-top: 5rem;
 }
+
 .sub-category img {
   border-radius: 10px;
   padding: 0.7rem;
   transition: transform 0.9s ease-in-out;
   border-radius: 20px;
+  height: 200px;
+  width: 200px;
+  object-fit: cover;
 }
 .sub-category div {
   /* background-color: darkgrey; */
   box-shadow: 0 15px 15px rgba(0, 0, 0, 0.2);
   border-radius: 10px;
+  background-color: #D3D3D3;
 }
 .sub-category p {
   margin-bottom: 10px;
@@ -148,6 +151,9 @@ body::-webkit-scrollbar {
 
 .sub-category img:hover {
   transform: translateY(-20px);
+}
+.sub-category:hover {
+  cursor: pointer;
 }
 
 .Feature-products {
@@ -206,6 +212,7 @@ body::-webkit-scrollbar {
 } */
 .comparison-table tr:hover {
   background-color: #f9e0e0;
+  cursor: pointer;
 }
 .table-heading {
   text-align: center;
@@ -326,6 +333,8 @@ body::-webkit-scrollbar {
     margin: 0 auto;
     padding: 0.5rem 0;
     border-radius: 10px;
+    height: 200px;
+   
   }
 
   .comparison-table {
