@@ -52,16 +52,19 @@ body::-webkit-scrollbar {
 .list a li {
   padding-bottom: 5px; /* Space for visual separation */
   border-bottom: 2px solid transparent; /* Invisible border */
-  background: linear-gradient(to left, Coral 0%, Coral 100%);
+  background: linear-gradient(to right, Coral 0%, Coral 100%);
   background-size: 0% 2px; /* Initially hidden */
   background-repeat: no-repeat;
   background-position: bottom;
-  transition: background-size 0.3s ease; /* Smooth animation */
+  color:black;
+  letter-spacing: 2px;
+  transition: background-size 0.3s ease-in; /* Smooth animation */
 }
 .list a li:hover {
-  color: black;
+  color: #0d3b66;
   cursor: pointer;
   background-size: 100% 2px;
+  
 }
 
 .login-btn {
