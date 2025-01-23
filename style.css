@@ -107,17 +107,39 @@ body::-webkit-scrollbar {
   font-size: 20px;
   letter-spacing: 3px;
 }
+.main-content i{
+  background: linear-gradient(90deg, #FF6A00, #EE0979, #8E2DE2, #4A00E0, #00C9FF);
+  background-clip: text; 
+  background-size: 200% 200%; 
+  -webkit-background-clip: text; 
+  -webkit-text-fill-color: transparent;
+  animation: gradient-animation 3s ease infinite;
+}
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
 
 .special-offer {
   border-radius: 30px;
-  background-color: #ffbe0b;
-  padding: 10px;
-  color: black;
-  animation: zoomAndFadeEffect 3s infinite; /* Apply animation */
+  background: linear-gradient(135deg, #ffbe0b, #ff9f1c, #ff6f59);
+  padding: 15px 20px;
+  color: white;
+  animation: zoomAndFadeEffect 2s infinite;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); 
+  text-align: center;
 }
 
 .special-offer p {
-  font-size: 0.8rem;
+  font-size: 1rem;
+  margin: 0;
 }
 
 @keyframes zoomAndFadeEffect {
@@ -369,5 +391,19 @@ body::-webkit-scrollbar {
 
   .reviews {
     flex-direction: column;
+  }
+
+  .special-offer {
+    border-radius: 30px;
+    padding: 10px 10px;
+    color: white; 
+    text-align: center;
+  }
+  
+
+  .special-offer p {
+    font-size: 0.6rem;
+    margin: 0;
+    line-height: 10px;
   }
 }
