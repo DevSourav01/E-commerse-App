@@ -52,7 +52,7 @@ body::-webkit-scrollbar {
 .list a li {
   padding-bottom: 5px; /* Space for visual separation */
   border-bottom: 2px solid transparent; /* Invisible border */
-  background: linear-gradient(to right, Coral 0%, Coral 100%);
+  background: linear-gradient(to right, red,blue);
   background-size: 0% 2px; /* Initially hidden */
   background-repeat: no-repeat;
   background-position: bottom;
