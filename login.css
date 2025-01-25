@@ -1,71 +1,63 @@
 /* General Styles */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f9f9f9;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f5f5f5;
     margin: 0;
     padding: 0;
-    
-    
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
 }
 
-section{
+section {
     height: 100vh;
     width: 100%;
-    background-image: url('https://wallpapers.com/images/hd/shopping-background-x2ork68103rg3v79.jpg');
+    background-image: url('/image/shopping-background-x2ork68103rg3v79.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
     justify-content: center;
     align-items: center;
-  
-
 }
-
-
-
 
 /* Container Styling */
 .container {
     background-color: #fff;
-    width: 400px;
-    padding: 30px 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 360px;
+    padding: 40px 25px;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
     text-align: center;
+    animation: fadeIn 0.5s ease-in-out;
 }
 
-/* Radio Buttons */
-input[type="radio"] {
-    display: none;
+/* Keyframes for subtle fade-in animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.95);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
 }
 
-label {
-    margin: 0 20px;
-    font-size: 18px;
-    cursor: pointer;
-}
-
-input[type="radio"]:checked + label {
-    color: #4CAF50;
-    font-weight: bold;
-}
-
-/* Forms */
-.form-container {
-    display: none;
-}
-
+/* Titles */
 h2 {
-    font-size: 24px;
-    margin-bottom: 15px;
-    color: #333;
+    font-size: 26px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #222;
 }
 
 h3 {
     font-size: 14px;
     margin-top: 20px;
-    color: #555;
+    color: #777;
 }
 
 h3 a {
@@ -77,38 +69,31 @@ h3 a:hover {
     text-decoration: underline;
 }
 
-/* Input Fields */
-input[type="text"],
-input[type="email"],
-input[type="password"] {
-    width: 90%;
-    padding: 12px;
-    margin: 10px 0;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    font-size: 16px;
-    box-sizing: border-box;
+/* Radio Buttons */
+input[type="radio"] {
+    display: none;
 }
 
-/* Buttons */
-button {
-    width: 90%;
-    padding: 12px;
-    margin-top: 10px;
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    font-size: 16px;
+label {
+    margin: 0 15px;
+    font-size: 18px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-button:hover {
-    background-color: #45a049;
+input[type="radio"]:checked + label {
+    color: #fff;
+    background-color: #4CAF50;
+    font-weight: bold;
 }
 
-/* Initially show the login form */
+/* Forms */
+.form-container {
+    display: none;
+}
+
 #signup-form {
     display: none;
 }
@@ -137,15 +122,60 @@ button:hover {
     display: none;
 }
 
+/* Input Fields */
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 90%;
+    padding: 12px;
+    margin: 12px 0;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    outline: none;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus {
+    border-color: #4CAF50;
+    box-shadow: 0 0 4px rgba(76, 175, 80, 0.2);
+}
+
+/* Buttons */
+button {
+    width: 90%;
+    padding: 14px;
+    margin-top: 15px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #45a049;
+    transform: translateY(-2px);
+}
+
+button:active {
+    background-color: #3e8e41;
+}
+
 /* Responsive Design */
 @media (max-width: 480px) {
     .container {
-        width: 90%;
-        padding: 20px;
+        width: 95%;
+        padding: 25px 15px;
     }
 
     h2 {
-        font-size: 20px;
+        font-size: 22px;
     }
 
     h3 {

@@ -236,6 +236,8 @@ body::-webkit-scrollbar {
   padding: 10px 15px;
   text-align: center;
 }
+
+
 .comparison-table th {
   background-color: #d32f2f;
   color: white;
@@ -244,6 +246,7 @@ body::-webkit-scrollbar {
 /* .comparison-table tr:nth-child(even) {
   background-color: #f2f2f2;
 } */
+ 
 .comparison-table tr:hover {
   background-color: #f9e0e0;
   cursor: pointer;
