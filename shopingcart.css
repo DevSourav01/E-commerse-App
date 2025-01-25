@@ -4,12 +4,34 @@
     box-sizing: border-box;
 }
 
+body{
+    font-family: "Roboto", serif;
+    font-weight: 800;
+    background-color: rgb(233, 215, 195);
+    overflow: scroll;
+}
+
+body::-webkit-scrollbar{
+    overflow-y: hidden;
+}
+
+.cart-title{
+    text-align: center;
+    margin-top: 20px;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #333;
+}
+
 .cart-container{
     text-align: center;
-    width: 80%;
+    
     margin: 0 auto;
-    box-shadow: 0 8px 8px rgba(0, 0, 0, 1);
     margin-top: 30px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    gap: 20px;
 }
 
 .cart-item-details{
@@ -24,21 +46,31 @@
     grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
     gap: 50px;
     padding: 20px;
+    width: 75%;
 
+}
+
+.payment-page{
+    padding: 20px;
+    border: 1px solid black;
+    margin-top: 2rem;
 }
 .cart-item {
     padding: 20px;
     border: 1px solid #ddd;
     border-radius: 5px;
     margin-bottom: 20px;
-    box-shadow: 0 5px 2px rgba(0, 0, 0, 0.1);
+    background-color: rgb(211, 211, 211);
+    box-shadow: 10px 5px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
 }
 .cart-item img {
     width: 100%; 
     height: auto; 
     border-bottom: 1px solid #ddd; 
     margin-bottom: 10px; 
-    object-fit: contain;
+    object-fit: cover;
+    border-radius: 10px;
 }
 
 .cart-summary{
@@ -46,13 +78,44 @@
     justify-content: space-between;
     margin-top: 20px;
     padding: 20px;
-    border-top: 1px solid #ddd;
+    border-top: 1px solid black;
+    gap: 2rem;
+    align-items: center;
 }
 .quantity{
-    width: 50px;
-    padding: 5px;
-    border: 1px solid #ddd;
+    display: flex;
+    color: blue;
+    gap: 1rem;
+    align-items: center;
+    margin-top: 20px;
+    
 }
+
+.minus, 
+.plus {
+    font-size: 0.8rem; /* Slightly larger for better visibility */
+    padding: 5px 10px; /* Comfortable padding */
+    color: #333; /* Dark gray for a modern look */
+    cursor: pointer;
+    border: 2px solid #333; /* Prominent outline */ /* Light background for contrast */
+    border-radius: 8px; /* Rounded corners for a modern look */
+  }
+
+
+.updated-quantity {
+    font-size: 1.2rem; /* Slightly larger text for better emphasis */
+    padding: 5px 10px; /* Comfortable padding */
+    color: #555; /* Softer gray for text */
+    font-weight: 500;
+    border-radius: 25px; /* Rounded, pill-like shape */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Uniform shadow for a clean look */
+    border: 2px solid #ccc; /* Softer border color for subtlety */
+    background-color: #fff; /* White background for contrast */
+    text-align: center; /* Ensure text stays centered */
+}
+
+
+
 
 .cart-item-actions{
     display: flex;
@@ -62,8 +125,8 @@
 .remove-item{
   border: none;
   background-color: red;
-  font-size: 1rem;
-  padding: 8px;
+  font-size: 0.9rem;
+  padding: 0px 15px;
   color: white;
   font-weight: 700;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -82,3 +145,21 @@
   cursor: pointer;
   outline: none;
 }
+
+
+@media (max-width: 540px) {
+    
+
+
+.cart-container{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    
+}
+
+.payment-page{
+    margin-left: 1rem;
+}
+}
+

@@ -4,16 +4,26 @@ body {
     background-color: #f9f9f9;
     margin: 0;
     padding: 0;
+    
+    
+}
+
+section{
+    height: 100vh;
+    width: 100%;
+    background-image: url('https://wallpapers.com/images/hd/shopping-background-x2ork68103rg3v79.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    background-image: url('https://images.pexels.com/photos/5624987/pexels-photo-5624987.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
-    background-size: cover;
-    background-position: center;
-    object-fit: cover;
-    
+  
+
 }
+
+
+
 
 /* Container Styling */
 .container {
