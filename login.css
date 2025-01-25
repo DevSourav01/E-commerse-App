@@ -8,6 +8,11 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
+    background-image: url('https://images.pexels.com/photos/5624987/pexels-photo-5624987.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+    background-size: cover;
+    background-position: center;
+    object-fit: cover;
+    
 }
 
 /* Container Styling */
