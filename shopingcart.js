@@ -87,7 +87,7 @@ function updateTotalPrice() {
   });
 
   // Update the total price display with the word "Total" followed by the price
-  totalElement.innerText = `Total: $${total.toFixed(2)}`;
+  totalElement.innerText = `Total : $${total.toFixed(2)}`;
 }
 
 // Loop through products and add them to the cart
@@ -98,7 +98,7 @@ products.forEach((product) => {
   cartDiv.innerHTML = `
     <img src="${product.image}" alt="${product.name}">
     <div class="cart-item-details">
-      <h3>${product.name}</h3>
+      <h3 class="product-name">${product.name}</h3>
       <p class="price">$${product.price.toFixed(2)}</p>
     </div>
     <div class="cart-item-actions">

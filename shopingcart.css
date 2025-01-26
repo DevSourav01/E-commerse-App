@@ -56,17 +56,32 @@ a {
   white-space: nowrap;
 }
 
+.product-name{
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #333;
+  letter-spacing: 1px;
+ 
+}
+
 .payment-page {
   padding: 20px;
-  border: 1px solid black;
   margin-top: 2rem;
+  background-color: blue;
+}
+.payment-page h1 {
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
 }
 .cart-item {
   padding: 20px;
   border: 1px solid #ddd;
   border-radius: 5px;
   margin-bottom: 20px;
-  background-color: rgb(211, 211, 211);
+  background-color: white;
   box-shadow: 10px 5px 6px rgba(0, 0, 0, 0.1);
   border-radius: 12px;
 }
@@ -83,10 +98,17 @@ a {
   display: flex;
   justify-content: space-between;
   margin-top: 20px;
-  padding: 20px;
-  border-top: 1px solid black;
   gap: 2rem;
   align-items: center;
+  padding: 5px;
+  
+}
+.cart-summary p{
+  color: white;
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+  
 }
 .quantity {
   display: flex;
@@ -139,13 +161,16 @@ a {
 .cart-checkout-button {
   border: none;
   background-color: red;
-  font-size: 1rem;
-  padding: 8px;
   color: white;
+  font-size: 1.2rem;
   font-weight: 700;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 8px;
+  margin-bottom: 20px;
   cursor: pointer;
   outline: none;
+}
+.cart-checkout-button:hover {
+  background-color: black;
 }
 
 @media (max-width: 540px) {
