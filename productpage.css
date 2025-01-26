@@ -30,9 +30,10 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+
   align-items: center;
   background-color: white;
-  border: 1px solid black;
+
   box-shadow: 1px 5px rgba(63, 2, 133, 0.1);
 }
 
@@ -88,30 +89,26 @@ body {
   .product-info,
   p,
   h3 {
-    font-size: 1rem;
+    font-size: 0.6rem;
     width: 90%;
   }
-  .product-info{
+  .product-info {
     gap: 1rem;
-    
-    
+    width: 106%;
+    text-wrap-style:balance;
   }
   .product-image {
     height: 120px;
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
   }
   .add-to-cart {
     width: 150px;
   }
-  body{
+  body {
     display: scroll;
-    
   }
 
   body::-webkit-scrollbar {
-    
     overflow-y: hidden;
   }
 }
-
-
