@@ -21,12 +21,12 @@ body::-webkit-scrollbar {
   font-size: 2rem;
   font-weight: 700;
   color: #333;
+}
 
-  
+a {
+  text-decoration: none;
 }
-a{
-    text-decoration: none;
-}
+
 .cart-container {
   text-align: center;
 
@@ -54,16 +54,12 @@ a{
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-
-
 }
 
 .payment-page {
   padding: 20px;
   border: 1px solid black;
   margin-top: 2rem;
-  
-
 }
 .cart-item {
   padding: 20px;
@@ -107,19 +103,20 @@ a{
   color: #333; /* Dark gray for a modern look */
   cursor: pointer;
   border: 2px solid #333; /* Prominent outline */ /* Light background for contrast */
-  border-radius: 8px; /* Rounded corners for a modern look */
+  border-radius: 25px; /* Rounded corners for a modern look */
+  background-color: #fff; 
 }
 
 .updated-quantity {
-  font-size: 1.2rem; /* Slightly larger text for better emphasis */
-  padding: 5px 10px; /* Comfortable padding */
-  color: #555; /* Softer gray for text */
+  font-size: 1.2rem; 
+  padding: 5px 10px; 
+  color: #555; 
   font-weight: 500;
-  border-radius: 25px; /* Rounded, pill-like shape */
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Uniform shadow for a clean look */
-  border: 2px solid #ccc; /* Softer border color for subtlety */
-  background-color: #fff; /* White background for contrast */
-  text-align: center; /* Ensure text stays centered */
+  border-radius: 8px; 
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); 
+  border: 2px solid #ccc; 
+  background-color: #fff; 
+  text-align: center; 
 }
 
 .cart-item-actions {
@@ -131,7 +128,7 @@ a{
   border: none;
   background-color: red;
   font-size: 0.9rem;
-  padding: 0px 15px;
+  padding: 10px 15px;
   color: white;
   font-weight: 700;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
