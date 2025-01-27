@@ -68,7 +68,7 @@ const products = [
   },
 ];
 
-let total=0
+let total = 0;
 
 // Function to update the total price
 function updateTotalPrice() {
@@ -156,13 +156,55 @@ const checkoutButton = document.querySelector("#checkout-button");
 const purchasedSuccesful = new Audio("/audio/success-221935.mp3");
 
 checkoutButton.addEventListener("click", () => {
+  let quantitySelected = false; // Flag to check if any item has a quantity selected
+
+  // Loop through all cart items to check if any quantity is selected
+  document.querySelectorAll(".cart-item").forEach((cartItem) => {
+    const updatedQuantity = cartItem.querySelector(".updated-quantity");
+
+    if (parseInt(updatedQuantity.innerText) > 0) {
+      quantitySelected = true; // If any item has a quantity greater than 0, set the flag
+    }
+  });
+
+  if (!quantitySelected) {
+    // Show an alert if no quantity is selected for any item
+    alert("Please select a quantity to proceed.");
+    return; // Exit the function if no quantity is selected
+  }
+
   const confirmation = confirm("Are you sure you want to checkout?");
 
-  if (confirmation) {
+  if (confirmation === true) {
     // Reset all quantities to 0
-    purchasedSuccesful.play();
-    alert(`Purchase of $${total.toFixed(2)} was successful`);
- 
+    checkoutProcessing();
+
+    setTimeout(() => {
+      orderProcessed();
+      purchasedSuccesful.play();
+    }, 2000);
+
+    setTimeout(() => {
+      
+      orderProcessed();
+      alert(`Purchase of $${total.toFixed(2)} was successful`);
+
+      // Reset all quantities to 0
+      document
+        .querySelectorAll(".updated-quantity")
+        .forEach((quantityElement) => {
+          quantityElement.innerText = 0;
+        });
+
+      // Reset the total to 0
+      updateTotalPrice();
+
+      // Reset the button text back to the original state
+      checkoutButton.textContent = "Checkout";
+      checkoutButton.style.backgroundColor = "";
+    }, 2000);
+  } else if (confirmation === false) {
+    alert("Purchase is Unsuccessful");
     document
       .querySelectorAll(".updated-quantity")
       .forEach((quantityElement) => {
@@ -173,3 +215,12 @@ checkoutButton.addEventListener("click", () => {
     updateTotalPrice();
   }
 });
+
+function checkoutProcessing() {
+  checkoutButton.textContent = "Processing....";
+}
+
+function orderProcessed() {
+  checkoutButton.style.backgroundColor = "green";
+  checkoutButton.textContent = "Processed";
+}
