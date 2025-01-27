@@ -201,7 +201,7 @@ checkoutButton.addEventListener("click", () => {
 
       // Reset the button text back to the original state
       checkoutButton.textContent = "Checkout";
-      checkoutButton.style.backgroundColor = "";
+      checkoutButton.style.backgroundColor = "red";
     }, 3000);
   } else if (confirmation === false) {
     alert("Purchase is Unsuccessful");
