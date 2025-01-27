@@ -169,9 +169,6 @@ a {
   cursor: pointer;
   outline: none;
 }
-.cart-checkout-button:hover {
-  background-color: black;
-}
 
 @media (max-width: 540px) {
   .cart-container {
