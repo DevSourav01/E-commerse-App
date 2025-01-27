@@ -183,7 +183,7 @@ checkoutButton.addEventListener("click", () => {
     setTimeout(() => {
       orderProcessed();
       purchasedSuccesful.play();
-    }, 3000);
+    }, 2000);
 
     setTimeout(() => {
       
@@ -203,7 +203,7 @@ checkoutButton.addEventListener("click", () => {
       // Reset the button text back to the original state
       checkoutButton.textContent = "Checkout";
       checkoutButton.style.backgroundColor = "red";
-    }, 3000);
+    }, 2000);
   } else if (confirmation === false) {
     alert("Purchase is Unsuccessful");
     document
