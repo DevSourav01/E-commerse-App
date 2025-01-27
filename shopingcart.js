@@ -181,8 +181,9 @@ checkoutButton.addEventListener("click", () => {
     checkoutProcessing();
 
     setTimeout(() => {
-      orderProcessed();
       purchasedSuccesful.play();
+      orderProcessed();
+      
     }, 2000);
 
     setTimeout(() => {
@@ -226,4 +227,5 @@ function orderProcessed() {
   checkoutButton.textContent = "Processed";
   checkoutButton.style.color = "white"; 
   checkoutButton.offsetHeight;
+  
 }
