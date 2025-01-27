@@ -1,5 +1,6 @@
 const cartContainer = document.querySelector(".cart-items-container");
 
+
 // Sample data for products
 const products = [
   {
@@ -223,4 +224,6 @@ function checkoutProcessing() {
 function orderProcessed() {
   checkoutButton.style.backgroundColor = "green";
   checkoutButton.textContent = "Processed";
+  checkoutButton.style.color = "white"; 
+  checkoutButton.offsetHeight;
 }
