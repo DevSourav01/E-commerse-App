@@ -74,9 +74,10 @@ body {
 }
 .add-to-cart:hover {
   background-color: blue;
-  transition: all 0.8s;
-  transform: translateY(-10px);
+  transition: all 0.6s;
+  transform: translate3d(2px, 3px, 5px); 
 }
+
 
 .product-image {
   width: 100%;

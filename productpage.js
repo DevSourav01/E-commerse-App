@@ -155,7 +155,7 @@ electronics.forEach((product) => {
   wishlistIcon.addEventListener("click", function () {
     if (wishlistIcon.style.color === "red") {
       setTimeout(() => {
-        alert("Remove From Whislist");
+        alert("Remove From wishlist");
         wishlistIcon.style.color = "";
       }, 400);
 
@@ -163,7 +163,7 @@ electronics.forEach((product) => {
     } else {
       wishlistIcon.style.color = "red";
       setTimeout(() => {
-        alert("Added To Whislist");
+        alert("Added To wishlist");
       }, 400);
     }
     console.log(wishlistIcon.style.color);

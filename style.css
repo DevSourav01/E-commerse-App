@@ -114,6 +114,16 @@ body::-webkit-scrollbar {
   -webkit-background-clip: text; 
   -webkit-text-fill-color: transparent;
   animation: gradient-animation 3s ease infinite;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.main-content i::after{
+  content: "";
+  display: inline-block;
+  width: 3px;
+  height: 40px;
+  margin-left: 4px;
 }
 @keyframes gradient-animation {
   0% {
