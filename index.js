@@ -1,5 +1,5 @@
 const italic = document.querySelector("i");
-let word = "BharatCart.";
+let word = "BharatCart";
 let characterIndex = 0;
 let reverseType = false;
 
