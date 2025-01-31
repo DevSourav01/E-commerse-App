@@ -170,7 +170,7 @@ button:active {
 /* Responsive Design */
 @media (max-width: 480px) {
     .container {
-        width: 95%;
+        width: 75%;
         padding: 25px 15px;
     }
 
