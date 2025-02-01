@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", fetchProducts);
 
 async function fetchProducts() {
     try {
-        const response = await fetch('https://fakestoreapi.com/products?limit=10');
+        const response = await fetch('https://fakestoreapi.com/products?limit=12');
         const products = await response.json();
 
         const container = document.getElementById('product-container');
