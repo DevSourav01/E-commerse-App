@@ -111,9 +111,10 @@ body {
     text-wrap-style: balance;
   }
   .product-image {
-    height: 120px;
+    height: 170px;
     margin-bottom: 0.5rem;
   }
+
   .add-to-cart {
     width: 150px;
   }
