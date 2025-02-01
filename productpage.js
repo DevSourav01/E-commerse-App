@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", fetchProducts);
 
 async function fetchProducts() {
   try {
-    const response = await fetch("https://dummyjson.com/products?limit=18&skip=22");
+    const response = await fetch("https://dummyjson.com/products?limit=18&skip=29");
     const data = await response.json(); 
 
     const productContainer = document.querySelector(".product-container");
