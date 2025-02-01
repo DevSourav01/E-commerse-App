@@ -19,17 +19,17 @@ document.addEventListener("DOMContentLoaded", fetchProducts);
 
 async function fetchProducts() {
     try {
-        const response = await fetch('https://fakestoreapi.com/products?limit=12');
+        const response = await fetch('https://dummyjson.com/products?limit=12&skip=12');
         const products = await response.json();
 
         const container = document.getElementById('product-container');
         container.innerHTML = ''; // Clear existing content
 
-        products.forEach(product => {
+        products.products.forEach(product => {
             const productElement = document.createElement('div');
             productElement.classList.add('product');
             productElement.innerHTML = `
-                <img src="${product.image}" alt="${product.title}">
+                <img src="${product.images[0]}" alt="${product.title}">
                 <p><strong>${product.title}</strong></p>
                 <p>$${product.price}</p>
             `;
