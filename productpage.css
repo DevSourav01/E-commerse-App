@@ -91,6 +91,30 @@ body {
 
 } */
 
+/* Style for Search Input and Dropdown */
+#searchInput, #categoryFilter {
+  width: 250px;
+  padding: 8px;
+  margin: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+/* Focus Effect */
+#searchInput:focus, #categoryFilter:focus {
+  border-color: #4CAF50;
+  outline: none;
+}
+
+/* Centering the Inputs */
+.filter-container {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 20px 0;
+}
+
 @media (max-width: 540px) {
   .heading-page {
     font-size: 0.8rem;
