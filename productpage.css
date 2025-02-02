@@ -93,12 +93,16 @@ body {
 
 /* Style for Search Input and Dropdown */
 #searchInput, #categoryFilter {
-  width: 250px;
+  width: 300px;
   padding: 8px;
   margin: 10px;
   border: 1px solid #ccc;
   border-radius: 4px;
   font-size: 14px;
+}
+
+.searchOutput{
+  width: 600px !important;
 }
 
 /* Focus Effect */
