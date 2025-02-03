@@ -2,6 +2,7 @@ const header = document.querySelector(".heading-page");
 const searchInput = document.getElementById("searchInput");
 const categoryFilter = document.getElementById("categoryFilter");
 const productContainer = document.querySelector(".product-container");
+const shortedProduct=document.querySelector(".shorted-product")
 
 let allProducts = []; // Store all fetched products
 
@@ -9,7 +10,9 @@ document.addEventListener("DOMContentLoaded", fetchProducts);
 
 async function fetchProducts() {
   try {
-    const response = await fetch("https://dummyjson.com/products?limit=18&skip=29");
+    const response = await fetch(
+      "https://dummyjson.com/products?limit=21&skip=29"
+    );
     const data = await response.json();
     allProducts = data.products; // Store products globally
     displayProducts(allProducts);
@@ -26,61 +29,39 @@ function displayProducts(products) {
     const productCard = document.createElement("div");
     productCard.classList.add("product-card");
 
-    const productImage = document.createElement("img");
-    productImage.src = product.images[0];
-    productImage.alt = product.title;
-    productImage.classList.add("product-image");
-
-    const productInfo = document.createElement("div");
-    productInfo.classList.add("product-info");
-
-    const productName = document.createElement("h3");
-    productName.textContent = product.title;
-
-    const productDescription = document.createElement("p");
-    productDescription.textContent = product.description;
-
-    const productPrice = document.createElement("p");
-    productPrice.textContent = "$" + product.price.toFixed(2);
-
-    // Create input field for quantity with default value of 1
-    const quantityInput = document.createElement("input");
-    quantityInput.type = "number";
-    quantityInput.value = 1;  // Default value of 1
-    quantityInput.min = 1;  // Minimum value for quantity
-    quantityInput.classList.add("quantity-input");
-
-    const addToCartButton = document.createElement("button");
-    addToCartButton.textContent = "Add to Cart";
-    addToCartButton.classList.add("add-to-cart");
-
-    // Create a container to wrap the input and button
-    const inputCartContainer = document.createElement("div");
-    inputCartContainer.classList.add("input-cart-container");
-
-    // Append input and button to the container
-    inputCartContainer.appendChild(quantityInput);
-    inputCartContainer.appendChild(addToCartButton);
-
-    // Append all elements
-    productInfo.appendChild(productName);
-    productInfo.appendChild(productDescription);
-    productInfo.appendChild(productPrice);
-    productInfo.appendChild(inputCartContainer); // Append the input-cart-container
-
-    productCard.appendChild(productImage);
-    productCard.appendChild(productInfo);
+    productCard.innerHTML = `
+      <img src="${product.images[0]}" alt="${
+      product.title
+    }" class="product-image">
+      <div class="product-info">
+        <h3>${product.title}</h3>
+        <p>${product.description}</p>
+        <p>$${product.price.toFixed(2)}</p>
+        <div class="input-cart-container">
+          <input type="number" value="1" min="1" class="quantity-input">
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+      </div>
+    `;
 
     productContainer.appendChild(productCard);
+
+   
+    shortedProduct.textContent = `Showing ${products.length} of ${allProducts.length} products`;
   });
 }
+
+
+
+
 
 // Function to filter products by search & price range
 function filterProducts() {
   const searchText = searchInput.value.toLowerCase();
   const selectedPriceRange = categoryFilter.value;
 
-  let minPrice = 2, maxPrice = 100; 
+  let minPrice = 2,
+    maxPrice = 100;
 
   if (selectedPriceRange === "$2-$20") {
     minPrice = 2;
@@ -94,10 +75,15 @@ function filterProducts() {
   }
 
   const filteredProducts = allProducts.filter((product) => {
-    const matchesSearch = product.title.toLowerCase().includes(searchText) || product.description.toLowerCase().includes(searchText);
-    const matchesPriceRange = product.price >= minPrice && product.price <= maxPrice;
+    const matchesSearch =
+      product.title.toLowerCase().includes(searchText) ||
+      product.description.toLowerCase().includes(searchText);
+    const matchesPriceRange =
+      product.price >= minPrice && product.price <= maxPrice;
     return matchesSearch && matchesPriceRange;
   });
+   // Update product count display
+  shortedProduct.textContent = `Showing ${filteredProducts.length} of ${allProducts.length} products`;
 
   displayProducts(filteredProducts);
 }

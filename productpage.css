@@ -132,6 +132,28 @@ body {
   margin-bottom: 10px;
 }
 
+/* */
+.shorted-product {
+  background: #f8f9fa; 
+  padding: 10px 20px;
+  border-radius: 8px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  display: inline-block;
+
+
+}
+
+.shorted-product p {
+  margin: 0;
+  font-size: 18px;
+  color: #007bff; /* Blue color */
+}
+
+
 @media (max-width: 540px) {
   .heading-page {
     font-size: 0.8rem;
@@ -166,4 +188,13 @@ body {
   body::-webkit-scrollbar {
     overflow-y: hidden;
   }
+  .quantity-input {
+    width: 25px;
+
+  }
+  .add-to-cart{
+    width: 100px;
+
+  }
+  
 }
