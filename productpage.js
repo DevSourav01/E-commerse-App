@@ -43,15 +43,30 @@ function displayProducts(products) {
     const productPrice = document.createElement("p");
     productPrice.textContent = "$" + product.price.toFixed(2);
 
+    // Create input field for quantity with default value of 1
+    const quantityInput = document.createElement("input");
+    quantityInput.type = "number";
+    quantityInput.value = 1;  // Default value of 1
+    quantityInput.min = 1;  // Minimum value for quantity
+    quantityInput.classList.add("quantity-input");
+
     const addToCartButton = document.createElement("button");
     addToCartButton.textContent = "Add to Cart";
     addToCartButton.classList.add("add-to-cart");
+
+    // Create a container to wrap the input and button
+    const inputCartContainer = document.createElement("div");
+    inputCartContainer.classList.add("input-cart-container");
+
+    // Append input and button to the container
+    inputCartContainer.appendChild(quantityInput);
+    inputCartContainer.appendChild(addToCartButton);
 
     // Append all elements
     productInfo.appendChild(productName);
     productInfo.appendChild(productDescription);
     productInfo.appendChild(productPrice);
-    productInfo.appendChild(addToCartButton);
+    productInfo.appendChild(inputCartContainer); // Append the input-cart-container
 
     productCard.appendChild(productImage);
     productCard.appendChild(productInfo);
