@@ -2,10 +2,9 @@
   margin: 0;
   padding: 0;
 }
-body {
-  /* background-color: #f4f4f4; */
-  background: #ead7c3;
 
+body {
+  background: #f1f1f1;
   font-family: "Roboto", serif;
   font-weight: 800;
   overflow-y: scroll;
@@ -19,6 +18,7 @@ body::-webkit-scrollbar {
   margin-left: 1rem;
   margin-top: 0.5rem;
 }
+
 .logo-img img {
   height: 50px;
   width: 100px;
@@ -28,47 +28,49 @@ body::-webkit-scrollbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #ffffff;
+  background-color: #282c34;
   position: fixed;
   z-index: 1000;
   top: 0;
   width: 100%;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
 
 .nav-right ul {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 5rem;
+  gap: 3rem;
   margin-right: 2rem;
   font-size: 1.2rem;
 }
+
 .list a {
   text-decoration: none;
   list-style: none;
 }
 
 .list a li {
-  padding-bottom: 5px; /* Space for visual separation */
-  border-bottom: 2px solid transparent; /* Invisible border */
-  background: linear-gradient(to right, red, blue);
-  background-size: 0% 2px; /* Initially hidden */
+  padding-bottom: 5px;
+  border-bottom: 2px solid transparent;
+  background: linear-gradient(to right, #00aaff, #00ffaa);
+  background-size: 0% 2px;
   background-repeat: no-repeat;
   background-position: bottom;
-  color: black;
+  color: #f1f1f1;
   letter-spacing: 2px;
-  transition: background-size 0.3s ease-in; /* Smooth animation */
+  transition: background-size 0.3s ease-in;
 }
+
 .list a li:hover {
-  color: #0d3b66;
+ 
   cursor: pointer;
   background-size: 100% 2px;
 }
 
 .login-btn {
   border: none;
-  background-color: #241e92;
+  background-color: #ff6363;
   font-size: 1.1rem;
   padding: 8px;
   color: white;
@@ -79,23 +81,21 @@ body::-webkit-scrollbar {
   cursor: pointer;
   outline: none;
 }
+
 .login-btn:hover {
   transform: scale(1.1);
-
-  background-color: #dd105e;
+  background-color: #ff3e3e;
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
 }
 
-
 /*main-content*/
-
 .main-content {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   gap: 2rem;
-  background-color: #f4d35e;
+  background-color: #e0aaff;
   color: white;
   padding: 4rem;
   font-size: 1.8rem;
@@ -103,19 +103,14 @@ body::-webkit-scrollbar {
   font-weight: 700;
   letter-spacing: 3px;
 }
+
 .main-content p {
   font-size: 20px;
   letter-spacing: 3px;
 }
+
 .main-content i {
-  background: linear-gradient(
-    90deg,
-    #ff6a00,
-    #ee0979,
-    #8e2de2,
-    #4a00e0,
-    #00c9ff
-  );
+  background: linear-gradient(90deg, #ff6a00, #ee0979, #8e2de2, #4a00e0, #00c9ff);
   background-clip: text;
   background-size: 200% 200%;
   -webkit-background-clip: text;
@@ -125,11 +120,13 @@ body::-webkit-scrollbar {
   align-items: center;
   justify-content: center;
 }
+
 .main-content i::after {
   content: "";
   display: inline-block;
   margin-left: 4px;
 }
+
 @keyframes gradient-animation {
   0% {
     background-position: 0% 50%;
@@ -178,6 +175,7 @@ body::-webkit-scrollbar {
   justify-content: center;
   margin-top: 5rem;
 }
+
 #product-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -195,6 +193,7 @@ body::-webkit-scrollbar {
   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
   background: #fff;
 }
+
 .product,
 p {
   max-height: 310px;
@@ -212,11 +211,11 @@ p {
 }
 
 .sub-category div {
-  /* background-color: darkgrey; */
   box-shadow: 0 25px 25px rgba(0, 0, 0, 0.2);
   border-radius: 10px;
-  background-color: #efa1a1;
+  background-color: #ef6191;
 }
+
 .sub-category p {
   margin-bottom: 10px;
 }
@@ -224,6 +223,7 @@ p {
 .sub-category img:hover {
   transform: translateY(-20px);
 }
+
 .sub-category:hover {
   cursor: pointer;
 }
@@ -241,9 +241,10 @@ p {
 }
 
 .footer-section {
-  background-color: darkgrey;
-  color: black;
+  background-color: #2d2a32;
+  color: #fff;
   text-align: center;
+  padding: 1rem 0;
   margin-top: 1rem;
 }
 
@@ -255,6 +256,7 @@ p {
   margin-top: 2rem;
   margin-bottom: 5rem;
 }
+
 .sub-category p {
   text-align: center;
   letter-spacing: 1px;
@@ -266,9 +268,9 @@ p {
   margin: 30px auto;
   border-collapse: collapse;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-
   margin-bottom: 5rem;
 }
+
 .comparison-table th,
 .comparison-table td {
   border: 1px solid #ddd;
@@ -277,18 +279,16 @@ p {
 }
 
 .comparison-table th {
-  background-color: #d32f2f;
+  background-color: #3498db;
   color: white;
   text-transform: uppercase;
 }
-/* .comparison-table tr:nth-child(even) {
-  background-color: #f2f2f2;
-} */
 
 .comparison-table tr:hover {
   background-color: #f9e0e0;
   cursor: pointer;
 }
+
 .table-heading {
   text-align: center;
   font-size: 24px;
@@ -299,7 +299,6 @@ p {
 .customer-testi {
   text-align: center;
   margin-bottom: 1rem;
-  margin-bottom: -7rem;
 }
 
 .customer-testi h1 {
@@ -322,6 +321,7 @@ p {
   gap: 1.1rem;
   letter-spacing: 2px;
 }
+
 .testi-div p {
   font-size: 1rem;
   color: white;
@@ -329,6 +329,7 @@ p {
   font-style: italic;
   letter-spacing: 2px;
 }
+
 .testi-div {
   padding: 2.5rem;
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.7);
@@ -344,7 +345,6 @@ p {
     height: 40px;
     width: 100px;
   }
-  /* nav -iteams*/
 
   .nav-right ul {
     display: flex;
@@ -356,6 +356,7 @@ p {
     margin-bottom: 0.5rem;
     font-size: 0.5rem;
   }
+
   .login-btn {
     font-size: 0.5rem;
   }
@@ -370,24 +371,26 @@ p {
     text-transform: none;
     font-weight: 300;
   }
+
   .list a li {
     color: black;
     transition: all 0.4s ease;
   }
-
-  /* main-item*/
 
   .main-content {
     margin-top: 5rem;
     gap: 2rem;
     padding: 35px;
   }
+
   .main-content h1 {
     font-size: 14px;
   }
+
   .main-content p {
     font-size: 15px;
   }
+
   .main-content.login-btn {
     margin-bottom: 5rem;
   }
@@ -396,13 +399,13 @@ p {
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   }
 
-  /*category section*/
   .sub-category {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 25px;
     padding: 1rem;
   }
+
   .sub-category div {
     width: 100%;
   }
@@ -410,11 +413,10 @@ p {
   .product,
   p {
     max-height: 260px;
-    width: auto;
     font-size: 8px;
   }
 
-  .product img{
+  .product img {
     height: 150px;
     width: 150px;
     object-fit: cover;
@@ -436,10 +438,12 @@ p {
     overflow-x: auto;
     display: block;
   }
+
   .comparison-table thead,
   .comparison-table tbody {
     width: 100%;
   }
+
   .comparison-table th,
   .comparison-table td {
     font-size: 12px;
@@ -448,7 +452,6 @@ p {
 
   .reviews {
     flex-direction: column;
-  
   }
 
   .special-offer {
@@ -464,5 +467,3 @@ p {
     line-height: 10px;
   }
 }
-
-
