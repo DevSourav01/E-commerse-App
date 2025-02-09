@@ -15,7 +15,10 @@ const intervalId = setInterval(() => {
 }, 250);
 
 
-document.addEventListener("DOMContentLoaded", fetchProducts);
+document.addEventListener("DOMContentLoaded", () => {
+  fetchProducts();
+  fetchComparisonTable();
+});
 
 async function fetchProducts() {
     try {
@@ -38,4 +41,30 @@ async function fetchProducts() {
     } catch (error) {
         console.error('Error fetching products:', error);
     }
+}
+
+
+// Fetch and display products in the comparison table
+async function fetchComparisonTable() {
+  try {
+      const response = await fetch('https://fakestoreapi.com/products?limit=5');
+      const products = await response.json();
+      
+      const tableBody = document.querySelector(".comparison-table tbody");
+      tableBody.innerHTML = ''; // Clear existing table content
+
+      products.forEach(product => {
+          const row = document.createElement('tr');
+          row.innerHTML = `
+              <td>${product.title}</td>
+              <td>$${product.price}</td>
+              <td>${product.description.slice(0, 50)}...</td>
+              <td>N/A</td>
+              <td>${Math.random().toFixed(2)} kg</td> <!-- Fake weight -->
+          `;
+          tableBody.appendChild(row);
+      });
+  } catch (error) {
+      console.error('Error fetching comparison table data:', error);
+  }
 }

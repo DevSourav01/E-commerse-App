@@ -86,6 +86,7 @@ body::-webkit-scrollbar {
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
 }
 
+
 /*main-content*/
 
 .main-content {
@@ -463,3 +464,5 @@ p {
     line-height: 10px;
   }
 }
+
+
