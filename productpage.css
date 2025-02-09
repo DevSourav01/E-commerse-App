@@ -70,7 +70,7 @@ body {
 }
 
 .quantity-input {
-  width: 50px;
+  width: 35px;
   padding: 5px;
   font-size: 1rem;
   margin-right: 10px;
@@ -86,7 +86,7 @@ body {
   border-radius: 8px;
   cursor: pointer;
   width: 160px;
-  font-size: 1em;
+  font-size: 10px;
   font-weight: 600;
   transition: background 0.3s, transform 0.2s;
 }
@@ -117,9 +117,9 @@ body {
   background: white;
 }
 
-.searchOutput {
+/* .searchOutput {
   width: 600px !important;
-}
+} */
 
 /* Focus Effect */
 #searchInput:focus,
@@ -184,6 +184,6 @@ body {
   }
 
   .add-to-cart {
-    width: 120px;
+    width: 89px;
   }
 }

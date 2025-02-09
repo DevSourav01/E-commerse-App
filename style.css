@@ -244,8 +244,12 @@ p {
   background-color: #2d2a32;
   color: #fff;
   text-align: center;
-  padding: 1rem 0;
+  padding: 1rem 3px;
   margin-top: 1rem;
+ 
+}
+.footer-section p{
+  font-size: 15px;
 }
 
 .sub-category {
@@ -342,6 +346,7 @@ p {
 
 .footer-section {
   margin-top: 0px;
+
 }
 
 /* Responsive Styles */
