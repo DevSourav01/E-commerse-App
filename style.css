@@ -28,7 +28,7 @@ body::-webkit-scrollbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #282c34;
+  background-color: #ffffff;
   position: fixed;
   z-index: 1000;
   top: 0;
@@ -57,7 +57,7 @@ body::-webkit-scrollbar {
   background-size: 0% 2px;
   background-repeat: no-repeat;
   background-position: bottom;
-  color: #f1f1f1;
+  color:rgb(19, 17, 17);
   letter-spacing: 2px;
   transition: background-size 0.3s ease-in;
 }
@@ -321,6 +321,11 @@ p {
   gap: 1.1rem;
   letter-spacing: 2px;
 }
+.reviews h1{
+  font-size: 14px;
+}
+ 
+
 
 .testi-div p {
   font-size: 1rem;
