@@ -4,7 +4,7 @@
 }
 
 body {
-  background: #f1f1f1;
+  background: linear-gradient(to right, #f5f7fa, #cfd9df);
   font-family: "Roboto", serif;
   font-weight: 800;
   overflow-y: scroll;
@@ -70,7 +70,7 @@ body::-webkit-scrollbar {
 
 .login-btn {
   border: none;
-  background-color: #ff6363;
+  background:linear-gradient(135deg, #6a11cb, #2575fc);
   font-size: 1.1rem;
   padding: 8px;
   color: white;
@@ -207,13 +207,13 @@ p {
   transition: transform 0.5s ease-in-out;
   height: 220px;
   width: 250px;
-  object-fit: cover;
+  object-fit: unset;
 }
 
 .sub-category div {
   box-shadow: 0 25px 25px rgba(0, 0, 0, 0.2);
   border-radius: 10px;
-  background-color: #ef6191;
+  background-color: #ffffff;
 }
 
 .sub-category p {
@@ -436,7 +436,7 @@ p {
     display: block;
     width: 90%;
     height: 90%;
-    object-fit: cover;
+    object-fit: unset;
     margin: 0 auto;
     padding: 0.5rem 0;
     border-radius: 10px;
