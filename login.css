@@ -9,8 +9,7 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background: linear-gradient(to right, #43cea2, #185a9d);
-
+  background: linear-gradient(to right, #b993d6, #8ca6db);
 
 }
 
@@ -27,7 +26,7 @@ section {
 }
 
 /* Container Styling */
-.container {
+/* .container {
   background-color: #fff;
   width: 360px;
   padding: 40px 25px;
@@ -35,18 +34,17 @@ section {
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
   text-align: center;
   animation: fadeIn 0.5s ease-in-out;
-}
+} */
 
-/* Keyframes for subtle fade-in animation */
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: scale(0.95);
-  }
-  to {
-    opacity: 1;
-    transform: scale(1);
-  }
+.container {
+  background-color: rgba(202, 205, 233, 0.973); 
+  backdrop-filter: blur(10px); 
+  -webkit-backdrop-filter: blur(10px); 
+  width: 360px;
+  padding: 40px 25px;
+  border-radius: 12px; 
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); 
+  text-align: center;
 }
 
 /* Titles */
@@ -60,7 +58,7 @@ h2 {
 h3 {
   font-size: 14px;
   margin-top: 20px;
-  color: #777;
+  color: rgb(16 0 0);
 }
 
 h3 a {
