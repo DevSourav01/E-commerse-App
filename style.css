@@ -33,7 +33,7 @@ body::-webkit-scrollbar {
   z-index: 1000;
   top: 0;
   width: 100%;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 8px 10px rgba(0, 0, 0, 0.2);
 }
 
 .nav-right ul {
@@ -394,7 +394,7 @@ p {
   }
 
   .main-content h1 {
-    font-size: 14px;
+    font-size: 12px;
   }
 
   .main-content p {
@@ -456,7 +456,7 @@ p {
 
   .comparison-table th,
   .comparison-table td {
-    font-size: 12px;
+    font-size: 8px;
     padding: 8px 10px;
   }
 
