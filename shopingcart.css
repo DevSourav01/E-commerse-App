@@ -150,4 +150,8 @@ button:hover {
   h1 {
     font-size: 1.5rem;
   }
+  .cart-checkout-container{
+    gap:1rem
+
+  }
 }
